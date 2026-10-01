@@ -1,0 +1,50 @@
+Level 3: Exploratory Data Analysis (EDA) Summary
+============================================================
+
+Top Longest Routes:
+ Train_No Source_Station Destination_Station  Total_Distance_KM  Total_Stops  Journey_Duration_Hours  Average_Speed_KMH
+      290   DELHI-SAFDAR        DELHI-SAFDAR               2694           14                  152.00              17.72
+    15906      DIBRUGARH        KANNIYAKUMAR               4256           58                   82.75              51.43
+    15905   KANNIYAKUMAR           DIBRUGARH               4260           57                   79.67              53.47
+     2515   TRIVANDRUM C             SILCHAR               3939           58                   76.92              51.21
+    12515   TRIVANDRUM C             SILCHAR               3932           57                   76.58              51.34
+
+Route Category Summary:
+                            Route_Count  Mean_Distance  Mean_Duration  Median_Duration  Mean_Speed
+Route_Category                                                                                    
+Long-Haul (501-1500 km)            1331         885.80          17.44            16.25       51.71
+Medium-Haul (101-500 km)           2828         220.43           5.56             4.92       40.64
+Short-Haul (<=100 km)              6082          43.81           1.29             1.17       34.31
+Super Long-Haul (>1500 km)          872        2070.99          38.53            36.04       54.55
+
+Top 10 Busiest Stations:
+Station_Code Station_Name  Total_Trains  Origin_Trains  Terminus_Trains
+        CSMT   CST-MUMBAI          1027            513              514
+         KYN    KALYAN JN           828            285              284
+         TNA        THANE           796            186              194
+        SDAH      SEALDAH           745            372              373
+         MSB CHENNAI BEAC           738            339              342
+         HWH   HOWRAH JN.           699            338              338
+          DR        DADAR           567             39               39
+         DDJ  DUM DUM JN.           463              4                4
+         CLA        KURLA           462             28               33
+         TBM     TAMBARAM           434            140              140
+
+Station Traffic Breakdown:
+Traffic_Tier
+Minor Station (5-19 trains)       4473
+Halt / Low Traffic (<5 trains)    1650
+Medium Station (20-49 trains)     1226
+Busy Station (50-99 trains)        447
+Major Junction (>=100 trains)      354
+
+Correlation Matrix:
+                        Total_Distance_KM  Total_Stops  Total_Halt_Minutes  Journey_Duration_Hours  Average_Speed_KMH
+Total_Distance_KM                  1.0000       0.4624              0.7864                  0.9820             0.5762
+Total_Stops                        0.4624       1.0000              0.7203                  0.5440             0.1343
+Total_Halt_Minutes                 0.7864       0.7203              1.0000                  0.8684             0.2985
+Journey_Duration_Hours             0.9820       0.5440              0.8684                  1.0000             0.4961
+Average_Speed_KMH                  0.5762       0.1343              0.2985                  0.4961             1.0000
+
+Distance - Duration Correlation: 0.9820
+Linear Fit Slope: 1.838 hrs / 100 km, R^2 = 0.9643

@@ -1,0 +1,43 @@
+Level 1: Data Overview & Route Table Summary
+============================================================
+
+Total rows: 186,074
+Unique trains: 11,113
+Unique stations: 8,147
+
+Column Schema:
+        Column Dtype  Non-Null Count  Null Count  Unique Values       Sample
+            SN int64          186074           0            118            1
+      Train_No int64          186074           0          11113          107
+  Station_Code   str          186074           0           8147          SWV
+            1A int64          186074           0           3097          100
+            2A int64          186074           0           3097          100
+            3A int64          186074           0           3097          100
+            SL int64          186074           0           3100          100
+  Station_Name   str          186074           0           8099 SAWANTWADI R
+  Route_Number int64          186074           0              1            1
+  Arrival_time   str          186074           0           1440     00:00:00
+Departure_Time   str          186074           0           1440     10:25:00
+      Distance int64          186074           0           3097            0
+
+Missing & Placeholders:
+        Column  Null_Count Null_Pct  Zero_or_00:00:00_Count
+            SN           0     0.0%                       0
+      Train_No           0     0.0%                       0
+  Station_Code           0     0.0%                       0
+            1A           0     0.0%                       0
+            2A           0     0.0%                       0
+            3A           0     0.0%                       0
+            SL           0     0.0%                       0
+  Station_Name           0     0.0%                       0
+  Route_Number           0     0.0%                       0
+  Arrival_time           0     0.0%                    2003
+Departure_Time           0     0.0%                    1970
+      Distance           0     0.0%                   11124
+
+Basic Statistics:
+                              count    mean     std  min   25%   50%    75%     max    IQR
+Stop Distance (KM)         186074.0  281.35  483.74  0.0  23.0  73.0  291.0  4260.0  268.0
+Route Total Distance (KM)   11113.0  348.67  595.81  1.0  38.0  82.0  324.0  4260.0  286.0
+Route Total Stops           11113.0   16.74   12.99  2.0   8.0  15.0   22.0   118.0   14.0
+Stop Sequence (SN)         186074.0   13.91   12.78  1.0   5.0  11.0   18.0   118.0   13.0

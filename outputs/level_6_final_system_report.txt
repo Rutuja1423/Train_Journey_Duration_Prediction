@@ -1,0 +1,19 @@
+Level 6: Final Prediction System Summary
+============================================================
+
+Model Equation: Duration (hours) = -0.506 + (0.01729 * Distance) + (0.1016 * Stops)
+
+Sample Corridor Predictions:
+                                   Route Distance (km)  Stops Predicted Duration  Est. Speed (km/h)
+                         Mumbai to Delhi         1,386     18            25h 17m               54.8
+     Howrah to Delhi (Rajdhani corridor)         1,447     20            26h 32m               54.5
+                    Chennai to Bengaluru           359      8             6h 31m               55.1
+Vivek Express (Kanyakumari to Dibrugarh)         4,260     57            78h 56m               54.0
+                          Mumbai to Pune           192      7             3h 31m               54.5
+     Local shuttle (Karjat to Palasdari)             2      2              0h 3m               40.0
+
+Database Station Lookup Validation:
+ Train                 From -> To Distance (km)  Stops  Actual Predicted      Error
+   128 MADGOAN JN. -> CHHATRAPATI         978.0     22  22h 5m   18h 38m 206.9 mins
+   401 AURANGABAD -> VARANASI JN.       1,618.0     12 36h 30m   28h 41m 469.0 mins
+ 15905  KANNIYAKUMAR -> DIBRUGARH       4,260.0     57 79h 40m   78h 56m  44.4 mins

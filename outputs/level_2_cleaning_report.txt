@@ -1,0 +1,24 @@
+Level 2: Data Cleaning & Feature Engineering Summary
+============================================================
+
+Raw rows: 186,074
+Cleaned stops saved: r:\Projects\final sysslan\outputs\cleaned_train_stops.csv
+Cleaned routes saved: r:\Projects\final sysslan\outputs\cleaned_train_routes.csv
+
+Route Metrics Summary:
+       Total_Distance_KM  Total_Stops  Journey_Duration_Hours  Average_Speed_KMH  Total_Halt_Minutes
+count           11113.00     11113.00                11113.00           11113.00            11113.00
+mean              348.67        16.74                    7.23              39.59               37.24
+std               595.81        12.99                   11.15              11.26               55.00
+min                 1.00         2.00                    0.08               0.55                0.00
+25%                38.00         8.00                    1.05              32.00                7.00
+50%                82.00        15.00                    2.25              37.84               18.00
+75%               324.00        22.00                    7.50              46.36               42.00
+max              4260.00       118.00                  152.00             113.13             1920.00
+
+Route Categories:
+Route_Category
+Short-Haul (<=100 km)         6082
+Medium-Haul (101-500 km)      2828
+Long-Haul (501-1500 km)       1331
+Super Long-Haul (>1500 km)     872
