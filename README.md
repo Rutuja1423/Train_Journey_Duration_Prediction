@@ -97,7 +97,7 @@ To analyze real-world railway timetable schedules and develop a data-driven pred
 
 ## Tools & Technologies
 
-$$\text{Python} \,\vert\ ,\text{Pandas} \\vert\, \text{NumPy} \,\vert\, \text{Matplotlib} \,\vert\, \text{Seaborn} \,\vert\, \text{Scikit-Learn} \,\vert\, \text{Joblib}$$
+$$\text{Python} \\vert\\text{Pandas} \\vert\\text{NumPy} \\vert\\text{Matplotlib} \\vert\\text{Seaborn} \\vert\\text{Scikit-Learn} \\vert\\text{Joblib}$$
 
 - **Programming Language**: Python 3.x
 - **Data Manipulation**: Pandas, NumPy
